@@ -3,12 +3,16 @@
   "version": "0.2.0",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "prettier.js",
+    "prettier.config.js"
   ],
-  "description": "ESLint config that we use internally",
+  "description": "The ESLint and Prettier config that we use internally",
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "prettier",
+    "prettierconfig"
   ],
   "repository": "https://github.com/AuxStudio/eslint-config-aux",
   "author": "Shaun Saker",
