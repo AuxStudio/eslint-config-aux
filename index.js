@@ -10,7 +10,7 @@ module.exports = {
     jest: true // unit testing
   },
   parser: "babel-eslint", // needed to make babel stuff work properly
-  extends: ["airbnb"],
+  extends: ["airbnb", "prettier", "prettier/react"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "import/no-named-as-default": 0,
