@@ -1,9 +1,27 @@
 {
   "name": "eslint-config-aux",
-  "version": "1.0.0",
-  "description": "ESLint config that we use internally",
+  "version": "0.1.0",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "description": "ESLint config that we use internally",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "repository": "https://github.com/AuxStudio/eslint-config-aux",
   "author": "Shaun Saker",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^5.15.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
 }
