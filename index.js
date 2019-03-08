@@ -32,7 +32,6 @@ module.exports = {
     "react/no-did-update-set-state": "off", // sometimes this is necessary
     "arrow-parens": "off", // parenthesis around single argument or not, depends on the use case
     "no-bitwise": "off",
-    "react/jsx-indent": "off", // conflicts with prettier
     "no-nested-ternary": "off", // often looks better than if else block
     "class-methods-use-this": "off", // class methods are great for self-documentation
     "react/sort-comp": [
@@ -47,7 +46,6 @@ module.exports = {
         ]
       }
     ],
-    "react/jsx-one-expression-per-line": "off", // does not work well with prettier
     "react/forbid-foreign-prop-types": "off", // we will only use propTypes from React-native/Text
     "react/jsx-wrap-multilines": "off",
     "import/named": "off",
@@ -55,7 +53,7 @@ module.exports = {
     "operator-linebreak": "off",
     "max-len": "off"
   },
-  plugins: ["react"],
+  plugins: ["react", "prettier"],
   settings: {
     "import/resolver": {
       node: {
