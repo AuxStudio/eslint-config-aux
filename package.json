@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aux",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "index.js",
   "files": [
     "index.js",
@@ -29,9 +29,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.16.4"
-  },
-  "devDependencies": {
+    "prettier": "^1.16.4",
     "prettier-config-aux": "^0.1.0"
   }
 }
