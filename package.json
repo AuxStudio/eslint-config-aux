@@ -1,0 +1,9 @@
+{
+  "name": "eslint-config-aux",
+  "version": "1.0.0",
+  "description": "ESLint config that we use internally",
+  "main": "index.js",
+  "repository": "https://github.com/AuxStudio/eslint-config-aux",
+  "author": "Shaun Saker",
+  "license": "MIT"
+}
