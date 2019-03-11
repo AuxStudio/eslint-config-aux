@@ -46,5 +46,5 @@ npm login
 3. Run the publish script.
 
 ```
-yarn run publish
+npm publish
 ```

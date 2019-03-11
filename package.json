@@ -3,11 +3,9 @@
   "version": "1.0.3",
   "main": "index.js",
   "files": [
-    "index.js",
-    "prettier.js",
-    "prettier.config.js"
+    "index.js"
   ],
-  "description": "The ESLint and Prettier config that we use internally",
+  "description": "The ESLint config that we use internally",
   "keywords": [
     "eslint",
     "eslintconfig"
@@ -16,12 +14,10 @@
   "author": "Shaun Saker",
   "license": "MIT",
   "scripts": {
-    "publish": "npm publish",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "peerDependencies": {
-    "eslint": "^5.15.1",
-    "prettier": "^1.16.4"
+    "eslint": "^5.15.1"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -31,7 +27,9 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.16.4",
     "prettier-config-aux": "^0.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
   }
 }
