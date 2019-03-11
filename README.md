@@ -17,5 +17,3 @@ yarn add --dev eslint babel-eslint eslint-config-aux eslint-plugin-airbnb eslint
   "extends": "aux"
 }
 ```
-
-## TODO
