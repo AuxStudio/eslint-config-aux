@@ -48,3 +48,7 @@ npm login
 ```
 npm publish
 ```
+
+## TODOS
+
+- Auto generate CHANGELOG with https://github.com/CookPete/auto-changelog
