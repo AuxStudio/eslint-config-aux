@@ -17,6 +17,10 @@
   "repository": "https://github.com/AuxStudio/eslint-config-aux",
   "author": "Shaun Saker",
   "license": "MIT",
+  "scripts": {
+    "publish": "npm publish",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+  },
   "peerDependencies": {
     "eslint": "^5.15.1",
     "prettier": "^1.16.4"
