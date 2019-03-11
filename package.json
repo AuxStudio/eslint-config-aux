@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aux",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "files": [
     "index.js"
@@ -17,7 +17,8 @@
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "peerDependencies": {
-    "eslint": "^5.15.1"
+    "eslint": "^5.15.1",
+    "prettier": "^1.16.4"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -28,8 +29,5 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier-config-aux": "^0.1.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.16.4"
   }
 }
