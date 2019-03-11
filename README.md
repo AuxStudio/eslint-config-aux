@@ -23,7 +23,7 @@ yarn add --dev eslint babel-eslint eslint-config-aux eslint-plugin-airbnb eslint
 1. Clone the project:
 
 ```
-git clone https://github.com/AuxStudio/js-simple-utils
+git clone https://github.com/AuxStudio/eslint-config-aux
 ```
 
 2. Do some work.
