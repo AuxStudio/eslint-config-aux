@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aux",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "main": "index.js",
   "files": [
     "index.js",
