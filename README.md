@@ -2,7 +2,7 @@
 
 The ESLint and Prettier config that we use internally.
 
-## USAGE
+## Installation
 
 1. Add dependencies:
 
@@ -16,4 +16,35 @@ yarn add --dev eslint babel-eslint eslint-config-aux eslint-plugin-airbnb eslint
 {
   "extends": "aux"
 }
+```
+
+## Development
+
+1. Clone the project:
+
+```
+git clone https://github.com/AuxStudio/js-simple-utils
+```
+
+2. Do some work.
+3. Create a PR.
+
+## Releases
+
+1. Run tests to make sure that they're passing.
+
+```
+yarn test
+```
+
+2. Login to npm
+
+```
+npm login
+```
+
+3. Run the publish script.
+
+```
+yarn run publish
 ```
