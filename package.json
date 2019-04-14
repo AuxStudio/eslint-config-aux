@@ -15,8 +15,8 @@
   "license": "MIT",
   "scripts": {
     "update-tags": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
-    "update-changelog": "yarn run auto-changelog && git commit -m 'Update Changelog' && git push",
-    "postpublish": "yarn run update-tags && yarn run update-changelog"
+    "update-changelog": "yarn run auto-changelog && git add . && git commit -m 'Update Changelog' && git push",
+    "postpublish": "yarn run update-changelog && yarn run update-tags"
   },
   "peerDependencies": {
     "eslint": "^5.15.1"
