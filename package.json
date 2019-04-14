@@ -14,7 +14,9 @@
   "author": "Shaun Saker",
   "license": "MIT",
   "scripts": {
-    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+    "update-tags": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
+    "update-changelog": "yarn run auto-changelog && git commit -m 'Update Changelog' && git push",
+    "postpublish": "yarn run update-tags && yarn run update-changelog"
   },
   "peerDependencies": {
     "eslint": "^5.15.1"
@@ -27,5 +29,14 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4"
+  },
+  "devDependencies": {
+    "auto-changelog": "^1.12.1"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
   }
 }
