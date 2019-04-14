@@ -52,7 +52,10 @@ module.exports = {
     "import/named": "off",
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "no-lonely-if": "off",
+    "no-unneeded-ternary": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   settings: {
     "import/resolver": {
