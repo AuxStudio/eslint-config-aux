@@ -55,7 +55,8 @@ module.exports = {
     "max-len": "off",
     "no-lonely-if": "off",
     "no-unneeded-ternary": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "no-case-declarations": "off" // these are often useful in switch statements
   },
   settings: {
     "import/resolver": {
