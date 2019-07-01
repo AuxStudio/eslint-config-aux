@@ -31,19 +31,13 @@ git clone https://github.com/AuxStudio/eslint-config-aux
 
 ## Releases
 
-1. Run tests to make sure that they're passing.
-
-```
-yarn test
-```
-
-2. Login to npm
+1. Login to npm
 
 ```
 npm login
 ```
 
-3. Run the publish script.
+2. Run the publish script.
 
 ```
 npm publish
